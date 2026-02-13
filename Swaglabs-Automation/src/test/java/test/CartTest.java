@@ -13,7 +13,7 @@ public class CartTest extends BaseTest {
 	
 	@Test
 	
-	public void cart() throws Exception
+	public void cart() 
 	{
 		LoginPage login= new LoginPage(driver);
 		login.loginPage("standard_user", "secret_sauce");
@@ -26,7 +26,7 @@ public class CartTest extends BaseTest {
 		
 		Assert.assertTrue(test.cart("Sauce Labs Bike Light"),"product is not found in cart");
 		
-		Thread.sleep(2000);
+		
 		
 	}
 
